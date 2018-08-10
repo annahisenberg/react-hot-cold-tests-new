@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: nAuP2gVV4b/Uhzp6t5aoNE1rDqhzA44tMLP0DXvslcwLPcs31ezTQiMbckxG5Ezv+cc2LI/A7utyDAYoHD/PsDNhlXfGqD836uW8w+1p7+jMHnv6qh+TR92QhWMSOfTYUAteqf6/jQjPHMESAXunU0k/3yg4o6jYToC+WIZXjKMcyJQ1wenQ78vUVWpxRcSHdM+vsv3AbPywmW8fDKHlpVMc475tKtW5yukW11WwMY7Cb9PlFu9SCMQqiXaYsRYNb7S9XkVlzN8rXdLf1DalV4d4GnRIYab+xapvbeE/u7riaM/QsqYMzXzBteU4PQwJIXh5iL7xRiyUyI1VemdQCu3GUXB1ML367JDwlz82c1bs1b2VR3KLxM/t1sHvw5rv/lBYBQsBwkCzG0UruYAQZjKhB7VXybg8e4pKf32M63h2ojSlhAqOXb4tGyennuOW4aCMKOYm8NEmmOvtlttVMPK+IC6z8kAOWYaLRBkakg1ITcPMRLhfSm16lYel6YG0HjzNg/OcXbTZvW4SKrVv663VTDDEWBx+XIhNIYmGI4+iYLdRDq2Vfqdee3DrWDguJ3uq8jD+MxhFZT58oBv3PQxdVjbhDRlS26TmobdWYIpEc4gWQR3cANC/KyRMRS3apJyz/TzDAV1YkXRZ6Jw80xepNpILqzmJt1oYT4TDYi4=
+  app: agile-temple-39308
+  on:
+    repo: annahisenberg/react-hot-cold-tests-new
